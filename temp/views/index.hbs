@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather app</title>
+    <link rel="icon" href="cloud.png" type="image/x-icon">
+    <meta name="description" content="weather app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="logo">Weather forecast<span><img class="weatherImg" src="cloud.png"></span></h1>
+    <p id="clock"></p>
+    <p id="date"></p>
+    <form>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" placeholder="location">
+        <button type="submit" value="Submit" id="btn">Submit</button>
+    </form>
+    <div class="textContent">
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+        <p id="msg3"></p>
+        <p id="msg4"></p>
+        <p id="msg5"></p>
+        <p id="msg6"></p>
+        <p id="msg7"></p>
+    </div>
+    <footer>
+        <h2>Made in &#128151 with india</h2>
+        <h2>&copy Copyright <span id="copyrightDate"></span></h2>
+    </footer>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
