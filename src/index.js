@@ -7,6 +7,7 @@ const app = express();
 const public = path.join(__dirname, '../public')
 const hbsViews = path.join(__dirname, '../temp/views')
 const hbsTemp = path.join(__dirname, '../temp/partials')
+const port = process.env.PORT || 3000
 
 
 app.set('view engine', 'hbs')
@@ -78,6 +79,6 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3000, () => {
-    console.log('listen on 3000')
+app.listen(port, () => {
+    console.log('listen on ' + port)
 });
