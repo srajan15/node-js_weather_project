@@ -15,7 +15,6 @@
 
 .logo{
     text-align:center;
-    margin-left:-1rem;
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
 
@@ -51,9 +50,7 @@ input[type="text"]{
     margin:1rem 0 0 1.5rem;
 
 }
-.weatherImg{
-    width:5rem;
-}
+
 footer{
     text-align: center;
     background-color: var(--footer-color);
