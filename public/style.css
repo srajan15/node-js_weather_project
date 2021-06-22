@@ -15,8 +15,9 @@
 
 .logo{
     text-align:center;
+    margin-left:-1rem;
     font-family: 'Pacifico', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
 }
 #clock{
@@ -45,11 +46,14 @@ input[type="text"]{
 .textContent{
     text-align: center;
 }
-.weatherImg{
-    padding: 3px 0 0 2rem;
-    width:3rem;
-}
+.wImgBox .weatherImg{
+    width:2rem;
+    margin:1rem 0 0 1.5rem;
 
+}
+.weatherImg{
+    width:5rem;
+}
 footer{
     text-align: center;
     background-color: var(--footer-color);
@@ -75,7 +79,7 @@ svg{
 }
 @keyframes sun{
     from{transform:translate(0px,0px);}
-    to{transform:translate(15px,15px);}
+    to{transform:translate(-15px,-15px);}
 }
 #outline_border{
     animation:hand 2s linear infinite;
