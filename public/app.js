@@ -7,7 +7,7 @@ const msg4 = document.querySelector('#msg4')
 const msg5 = document.querySelector('#msg5')
 const msg6 = document.querySelector('#msg6')
 const msg7 = document.querySelector('#msg7')
-const img = document.querySelector('img')
+const img = document.querySelector('.weatherImg')
 const clock = document.querySelector('#clock')
 const date = document.querySelector('#date')
 const copy = document.querySelector('#copyrightDate')
@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
 
 
 
-    fetch("/weather?search=" + location).then((response) => {
+    fetch("http://localhost:3000/weather?search=" + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 msg1.textContent = data.error
