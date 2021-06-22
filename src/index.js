@@ -1,5 +1,6 @@
 const hbs = require('hbs');
 const express = require('express');
+const api = require('./api')
 const path = require('path');
 const request = require('postman-request')
 
@@ -20,8 +21,8 @@ app.get('/weather', (req, res) => {
     const a = req.query
     const query = a.search
  // your api key from open weather
-    const api = "64c4ab21ff1bfaffaf14d442e3b272b3"
-    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=metric&appid=" + api
+    const api_key = api
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=metric&appid=" + api_key
 
     request({ url: url, json: true }, (error, response) => {
         if (error) {
