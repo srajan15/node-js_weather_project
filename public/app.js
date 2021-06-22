@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', (e) => {
                 msg5.textContent = "max temperature: " + data.max_temp + "C"
                 msg6.textContent = "latitude " + data.latitude
                 msg7.textContent = "longitude " + data.long
-                img.src = "http://openweathermap.org/img/wn/" + data.icon + "@2x.png"
+                img.src = "https://openweathermap.org/img/wn/" + data.icon + "@2x.png"
 
 
             }
