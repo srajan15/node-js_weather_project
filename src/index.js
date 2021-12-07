@@ -61,24 +61,15 @@ app.get('/weather', (req, res) => {
 })
 
 
-
 app.get('/', (req, res) => {
     res.render('index')
 
 
 })
 
-
 app.get('*', (req, res) => {
     res.send('404 not found')
 })
-
-
-
-
-
-
-
 
 app.listen(port, () => {
     console.log('listen on ' + port)
